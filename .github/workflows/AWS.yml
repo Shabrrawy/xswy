@@ -6,7 +6,7 @@ jobs:
   build:
 
     runs-on: windows-latest
-    timeout-minutes: 999999999
+    timeout-minutes: 9999
 
     steps:
     - name: Downloading Ngrok.
@@ -32,3 +32,4 @@ jobs:
       run: | 
         Invoke-WebRequest https://raw.githubusercontent.com/romain09/AWS-RDP/main/loop.ps1 -OutFile loop.ps1
         ./loop.ps1
+      
